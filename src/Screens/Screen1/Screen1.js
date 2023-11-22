@@ -1,5 +1,5 @@
 import {NavBar} from "../../Components/NavBar/NavBar";
-import myImage from "../../assets/mepro(1).png"
+import "./Screen1.css"
 import {Left} from "./Left";
 import {Right} from "./Right";
 import Marquee from "react-fast-marquee";
@@ -25,11 +25,10 @@ export const Screen1 = () => {
        }}>
            <Left/>
            <Right/>
-           <div style={{
+           <div className={"Screen1BottomMarquee"} style={{
                position:"absolute",
                bottom:0,
                color:"white",
-               fontSize:"200px"
            }}>
                <Marquee autoFill={true} speed={120}>
                    &nbsp;&nbsp;Ankit Kumar Shah -

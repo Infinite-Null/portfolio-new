@@ -1,0 +1,23 @@
+.Screen1BottomMarquee{
+    font-size:220px;
+}
+@media screen and (max-width: 1657px) {
+    .Screen1BottomMarquee{
+        font-size:200px;
+    }
+}
+@media screen and (max-width: 1657px) {
+    .Screen1BottomMarquee{
+        font-size:200px;
+    }
+}
+@media screen and (max-width: 1228px) {
+    .Screen1BottomMarquee{
+        font-size:150px;
+    }
+}
+@media screen and (max-width: 528px) {
+    .Screen1BottomMarquee{
+        font-size:120px;
+    }
+}
