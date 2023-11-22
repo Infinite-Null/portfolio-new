@@ -1,0 +1,12 @@
+.HamburgerLinks{
+    color: white;
+    font-size: 60px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.HamburgerLinks:hover{
+    border-bottom: 2px solid white;
+    letter-spacing: 6px;
+    transition: 0.5s;
+}

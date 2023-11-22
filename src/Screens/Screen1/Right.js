@@ -7,7 +7,7 @@ export const Right = () => {
             I am
             <Typewriter
                 options={{
-                    strings: ['Freelancer !', 'Application Developer !', "Web Developer !"],
+                    strings: ['Freelancer . ', 'Application Developer . ', "Full Stack Developer . "],
                     autoStart: true,
                     loop: true,
                 }}

@@ -45,8 +45,19 @@
 .HamburgerMenu{
     background: #171717;
     height: 100vh;
-    width: 350px;
+    width: 470px;
     z-index: 1000;
     position: fixed;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+    .HamburgerMenu{
+        width: 100vw;
+    }
+    .NavBarRightMenu{
+        display: none;
+    }
 }

@@ -5,11 +5,30 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {AnimatePresence} from "framer-motion";
 import { motion } from 'framer-motion';
-import {menuSlide} from "../Header/anime";
+import {menuSlide, scale, slide} from "../Header/anime";
+import {HamburgerLinks} from "./HamburgerLinks";
 
 export const NavBar = () => {
     const [isActive, setIsActive] = useState(false);
     const burger = useRef(null)
+    const navItems = [
+        {
+            title: "Home",
+            href: "/",
+        },
+        {
+            title: "Work",
+            href: "/work",
+        },
+        {
+            title: "About",
+            href: "/about",
+        },
+        {
+            title: "Contact",
+            href: "/contact",
+        },
+    ]
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(burger.current,{
@@ -29,7 +48,7 @@ export const NavBar = () => {
     return (
        <>
            <ul className={"NavBarRightMenu"}>
-               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={90} style={{
+               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={50} style={{
                    padding:2
                }}>
                    <li>Work</li>
@@ -83,15 +102,41 @@ export const NavBar = () => {
            }} onClick={()=>{
                setIsActive(false)
            }}>
-
-                   {isActive&& <motion.div onClick={()=>{
+               {isActive&& <motion.div onClick={()=>{
                        setIsActive(false)
                    }} key={100} variants={menuSlide} initial="initial" animate="enter" exit={
                      "exit"
                    } className={"HamburgerMenu"}>
+                   <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={50} style={{
+                       height:80,
+                       width:100,
+                       borderRadius:"100%",
+                       display:"flex",
+                       alignItems:"center",
+                       justifyContent:"center",
+                       position:"absolute",
+                       right:"20px",
+                       top:"30px",
+                       zIndex:"100000"
+                   }}>
+                       <button onClick={()=>{
+                           setIsActive(false)
+                       }} className={"NavBarButton"}><p>x</p></button>
+                   </Tilt>
+                   <div style={{
+                       position:"absolute",
+                       top:"90px",
+                       color:"white",
+                       borderBottom:"1px solid white",
+                       width:"80%",
+                       marginLeft:"20px",
+                       padding:"20px"
+                   }}>
+                       Navigation
+                   </div>
+                       {navItems.map((e,i)=><HamburgerLinks Link={e.href} Name={e.title} key={i} index={i}/>)}
 
                    </motion.div>}
-
            </motion.div>}
            </AnimatePresence>
        </>
