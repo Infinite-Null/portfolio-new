@@ -24,6 +24,29 @@
     /*color: #171717;*/
 }
 .NavBarRightMenu{
- position: absolute;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+.NavBarRightMenu li:hover{
+    border-bottom: 2px solid #171717;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #171717;
+}
+.HamburgerMenu{
+    background: #171717;
+    height: 100vh;
+    width: 350px;
+    z-index: 1000;
+    position: fixed;
     right: 0;
 }

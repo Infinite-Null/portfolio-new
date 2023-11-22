@@ -9,13 +9,19 @@ export const Screen1 = () => {
             height:"100vh",
             width:"100vw",
         }}>
-         <div style={{
+         <a href={"https://github.com/Infinite-Null"} target={"_blank"} className={"Screen1TopGithub"} style={{
              color:"white",
              position:"absolute",
              top:30,
-             left:20
-         }}>@Infinite Null</div>
-        <NavBar/>
+             left:20,
+             textDecoration:"none"
+         }}><div className={"Screen1TopGithubName"}>
+             @ Infinite Null
+         </div>
+             <div className={"Screen1TopName"}>
+                 @ Ankit Kumar Shah
+             </div>
+         </a>
        <div style={{
            height:"100%",
            width:"100%",

@@ -1,6 +1,22 @@
 .Screen1BottomMarquee{
     font-size:220px;
 }
+.Screen1TopGithub{
+    height: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.Screen1TopGithubName, .Screen1TopName{
+    transition: 0.5s;
+}
+.Screen1TopGithub:hover .Screen1TopGithubName{
+    translate: 0 -30px;
+    transition: 0.5s;
+}
+.Screen1TopGithub:hover .Screen1TopName{
+    translate: 0 -20px;
+    transition: 0.5s;
+}
 @media screen and (max-width: 1657px) {
     .Screen1BottomMarquee{
         font-size:200px;
