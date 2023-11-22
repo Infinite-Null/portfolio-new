@@ -1,0 +1,33 @@
+.Screen1RightPart{
+    position: absolute;
+    right: 0;
+    width: 530px;
+    padding-left: 40px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1732px) {
+    .Screen1RightPart{
+        width: 430px;
+    }
+}
+@media screen and (max-width: 1520px) {
+    .Screen1RightPart{
+        width: 330px;
+    }
+}
+@media screen and (max-width: 1196px) {
+    .Screen1RightPart{
+        width: 230px;
+        font-size: 25px;
+    }
+}
+

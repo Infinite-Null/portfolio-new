@@ -1,10 +1,17 @@
+import "./Right.css"
+import Typewriter from 'typewriter-effect';
+
 export const Right = () => {
     return (
-        <div style={{
-            border:"2px solid black",
-            width:"300px",
-            position:"absolute",
-            right:0
-        }}>right</div>
+        <div className={"Screen1RightPart"}>
+            I am
+            <Typewriter
+                options={{
+                    strings: ['Freelancer !', 'Application Developer !', "Web Developer !"],
+                    autoStart: true,
+                    loop: true,
+                }}
+            />
+        </div>
     )
 }

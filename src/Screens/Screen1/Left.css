@@ -1,0 +1,14 @@
+.Screen1LeftPart{
+    position: absolute;
+    background-color: #171717;
+    left: 0;
+    width: 230px;
+    padding-left: 40px;
+    padding-right: 10px;
+    color: aliceblue;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

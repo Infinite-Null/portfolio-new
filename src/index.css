@@ -1,3 +1,13 @@
 body{
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("https://res.cloudinary.com/dy0ejrc3m/image/upload/v1700637200/pnbs7viueilou6uc9q0r.png");
+    background-size: 180vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position: center;
+    background-color: rgb(132, 149, 171);
 }
+
