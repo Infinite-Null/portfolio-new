@@ -1,8 +1,13 @@
+import {Discription} from "../../Components/Screen2/Discription/Discription";
+
 export const Screen2 = () => {
     return (
         <div style={{
-            height:"100vh",
-            backgroundColor:"white"
-        }}></div>
+            height:"fit-content",
+            backgroundColor:"white",
+            position:"relative"
+        }}>
+            <Discription/>
+        </div>
     )
 }

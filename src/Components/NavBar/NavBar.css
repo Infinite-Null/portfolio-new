@@ -3,10 +3,10 @@
     outline: none ;
     border: 0 solid transparent;
     color: white;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,9 @@
 }
 .NavBarRightMenuMobile{
     display: none;
+}
+.NavBarRightMenuMobile li{
+    transition: 0.5s;
 }
 .HamburgerMenu{
     background: #171717;

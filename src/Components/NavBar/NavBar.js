@@ -49,17 +49,17 @@ export const NavBar = () => {
     return (
        <>
            <ul className={"NavBarRightMenu"}>
-               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={50} style={{
+               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={60} style={{
                    padding:2
                }}>
                    <li>Work</li>
                </Tilt>
-               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={90} style={{
+               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={60} style={{
                    padding:2
                }}>
                    <li>About</li>
                </Tilt>
-               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={90} style={{
+               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={60} style={{
                    padding:2
                }}>
                    <li>Contact</li>
@@ -81,7 +81,7 @@ export const NavBar = () => {
               top:"20px",
               zIndex:"999",
           }}>
-              <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={90} style={{
+              <Tilt tiltEnable={true} tiltReverse={true} transitionSpeed={2000} scale={1.2} perspective={40} style={{
                   height:80,
                   width:100,
                   borderRadius:"100%",
@@ -117,7 +117,7 @@ export const NavBar = () => {
                    }} key={100} variants={menuSlide} initial="initial" animate="enter" exit={
                      "exit"
                    } className={"HamburgerMenu"}>
-                   <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.2} perspective={50} style={{
+                   <Tilt tiltEnable={true}  tiltReverse={true} transitionSpeed={2000} scale={1.2} perspective={40} style={{
                        height:80,
                        width:100,
                        borderRadius:"100%",
