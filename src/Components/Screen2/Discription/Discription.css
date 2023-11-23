@@ -6,7 +6,7 @@
     align-items: center;
     padding-top: 150px;
     justify-content: center;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
 }
 .Screen2AboutMeDis1{
     font-size: 40px;
@@ -55,8 +55,8 @@
 }
 @media screen and (max-width: 1557px) {
     .Screen2AboutMeContainer{
-        gap: 10px;
-        margin-bottom: 200px;
+        gap: 50px;
+        margin-bottom: 220px;
     }
     .Screen2AboutMeDis1{
         font-size: 33px;
@@ -67,7 +67,7 @@
 @media screen and (max-width: 1145px) {
     .Screen2AboutMeContainer{
         gap: 50px;
-        margin-bottom: 200px;
+        margin-bottom: 230px;
     }
     .Screen2AboutMeDis1{
         font-size: 29px;
@@ -85,10 +85,7 @@
         align-items: flex-start;
         padding-top: 150px;
         justify-content: center;
-        margin-bottom: 240px;
-    }
-    .TiltScreen2Discription{
-        position: static;
+        margin-bottom: 220px;
     }
     .Screen2AboutMeDis1{
         width: 100%;
@@ -97,10 +94,6 @@
         font-size: 17px;
         white-space: pre-wrap;
         width: 100%;
-        display: flex;
-        gap: 80px;
-        align-items: center;
-        justify-content: center;
     }
 }
 @media screen and (max-width: 547px) {
@@ -113,6 +106,9 @@
     .Screen2AboutMeButton{
         height: 60px;
         width: 60px;
+    }
+    .Screen2AboutMeContainer{
+        margin-bottom: 190px;
     }
 }
 @media screen and (max-width: 463px) {
@@ -127,14 +123,9 @@
         width: 60px;
     }
     .Screen2AboutMeContainer{
-        display: flex;
         padding-left: 20px;
         padding-right: 20px;
         gap: 10px;
-        align-items: center;
-        padding-top: 150px;
-        justify-content: center;
-        margin-bottom: 160px;
     }
 }
 
