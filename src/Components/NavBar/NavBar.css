@@ -23,7 +23,7 @@
     background-color: #5a72ea;
     /*color: #171717;*/
 }
-.NavBarRightMenu{
+.NavBarRightMenu,.NavBarRightMenuMobile{
     position: absolute;
     right: 20px;
     top: 20px;
@@ -34,13 +34,16 @@
     transition: 0.5s;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
 }
-.NavBarRightMenu li:hover{
+.NavBarRightMenu li:hover,.NavBarRightMenuMobile li:hover{
     border-bottom: 2px solid #171717;
     letter-spacing: 2px;
     transition: 0.5s;
     color: #171717;
+}
+.NavBarRightMenuMobile{
+    display: none;
 }
 .HamburgerMenu{
     background: #171717;
@@ -59,5 +62,8 @@
     }
     .NavBarRightMenu{
         display: none;
+    }
+    .NavBarRightMenuMobile{
+        display: inline-block;
     }
 }

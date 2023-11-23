@@ -1,5 +1,13 @@
 .Screen1BottomMarquee{
     font-size:220px;
+    background: linear-gradient(rgba(241, 241, 241, 0), rgba(9, 9, 9, 0.88));
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100vw;
+}
+.Screen1BottomInfo{
+    display: none;
 }
 .Screen1TopGithub{
     height: 20px;
@@ -30,6 +38,13 @@
 @media screen and (max-width: 1228px) {
     .Screen1BottomMarquee{
         font-size:150px;
+    }
+}
+@media screen and (max-width: 835px) {
+    .Screen1BottomInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 @media screen and (max-width: 528px) {

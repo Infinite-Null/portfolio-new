@@ -31,3 +31,8 @@
     }
 }
 
+@media screen and (max-width: 835px){
+    .Screen1RightPart{
+        display: none;
+    }
+}

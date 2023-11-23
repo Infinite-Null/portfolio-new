@@ -7,6 +7,7 @@ import {AnimatePresence} from "framer-motion";
 import { motion } from 'framer-motion';
 import {menuSlide, scale, slide} from "../Header/anime";
 import {HamburgerLinks} from "./HamburgerLinks";
+import {BottomSocial} from "./BottomSocial";
 
 export const NavBar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -62,6 +63,15 @@ export const NavBar = () => {
                    padding:2
                }}>
                    <li>Contact</li>
+               </Tilt>
+           </ul>
+           <ul className={"NavBarRightMenuMobile"}>
+               <Tilt tiltEnable={true}  transitionSpeed={3000} scale={1.5} perspective={50} style={{
+                   padding:2
+               }}>
+                   <li onClick={()=>{
+                       setIsActive(true)
+                   }}>Menu</li>
                </Tilt>
            </ul>
           <div ref={burger} style={{
@@ -126,8 +136,8 @@ export const NavBar = () => {
                    <div style={{
                        position:"absolute",
                        top:"90px",
-                       color:"white",
-                       borderBottom:"1px solid white",
+                       color:"gray",
+                       borderBottom:"1px solid gray",
                        width:"80%",
                        marginLeft:"20px",
                        padding:"20px"
@@ -135,7 +145,7 @@ export const NavBar = () => {
                        Navigation
                    </div>
                        {navItems.map((e,i)=><HamburgerLinks Link={e.href} Name={e.title} key={i} index={i}/>)}
-
+                   <BottomSocial/>
                    </motion.div>}
            </motion.div>}
            </AnimatePresence>
