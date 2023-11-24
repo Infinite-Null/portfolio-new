@@ -52,6 +52,27 @@
      opacity: 1;
      transition: 0.5s;
 }
+
+.Screen2WorkButton{
+    background-color: transparent;
+    margin-top: 80px;
+    font-size: 18px;
+    margin-bottom: 120px;
+    outline: none;
+    border: 2px solid #8f8f8f;
+    border-radius: 1000px;
+    padding: 20px 40px 20px 40px;
+    transition: 0.5s;
+}
+
+.Screen2WorkButton:hover{
+    background-color: #5a72ea;
+    border: 2px solid #5a72ea;
+    color: white;
+    transition: 0.5s;
+    transform: scale3d(110%,110%,110%);
+}
+
 @media screen and (max-width: 1128px) {
     .Screen2EachWorkComponent h1{
         font-size: 7vw;

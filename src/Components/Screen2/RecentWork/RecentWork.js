@@ -1,5 +1,6 @@
 import "./RecentWork.css"
 import {motion} from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
 export const RecentWork = () => {
     const Works = [
@@ -31,6 +32,11 @@ export const RecentWork = () => {
                     Recent
             </div>
             {Works.map((e,i)=><EachWorkComponent name={e.name} image={e.image} scope={e.scope} key={i} index={i}/>)}
+            <Tilt tiltEnable={true}  transitionSpeed={3000}  perspective={180} tiltReverse={true} style={{
+                padding:2
+            }}>
+            <button className={"Screen2WorkButton"}>More Work</button>
+            </Tilt>
         </div>
     )
 }
