@@ -1,0 +1,55 @@
+.TitleScreen2Work{
+    color: grey;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 40px;
+    width: 80%;
+}
+.Screen2EachWorkComponent , .TitleScreen2Work{
+    display: flex;
+    border-bottom: 2px solid #a1a1a1;
+}
+.Screen2EachWorkComponent{
+    width: 90%;
+}
+.Screen2EachWorkComponent{
+    align-items: center;
+    justify-content: space-between;
+}
+.Screen2EachWorkComponent h1{
+    font-size: 5vw;
+    font-weight: normal;
+}
+.Screen2EachWorkComponent p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.Screen2EachWorkComponent img{
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 50px;
+    transition: 0.5s;
+    opacity: 0;
+    translate: 20px ;
+}
+.Screen2EachWorkComponent:hover img{
+    opacity: 1;
+    translate: 0;
+    height: 350px;
+    width: 350px;
+}
+@media screen and (max-width: 1128px) {
+    .Screen2EachWorkComponent h1{
+        font-size: 7vw;
+    }
+}@media screen and (max-width: 900px) {
+    .Screen2EachWorkComponent:hover img{
+        height: 200px;
+        width: 200px;
+    }
+}@media screen and (max-width: 658px) {
+    .Screen2EachWorkComponent h1{
+        font-size: 40px;
+    }
+}

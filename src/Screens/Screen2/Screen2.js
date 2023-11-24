@@ -1,4 +1,5 @@
 import {Discription} from "../../Components/Screen2/Discription/Discription";
+import {RecentWork} from "../../Components/Screen2/RecentWork/RecentWork";
 
 export const Screen2 = () => {
     return (
@@ -8,6 +9,7 @@ export const Screen2 = () => {
             position:"relative"
         }}>
             <Discription/>
+            <RecentWork/>
         </div>
     )
 }
