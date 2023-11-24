@@ -1,4 +1,6 @@
 import "./RecentWork.css"
+import {motion} from "framer-motion";
+
 export const RecentWork = () => {
     const Works = [
         {
@@ -28,14 +30,24 @@ export const RecentWork = () => {
             <div className={"TitleScreen2Work"}>
                     Recent
             </div>
-            {Works.map((e,i)=><EachWorkComponent name={e.name} image={e.image} scope={e.scope} key={i}/>)}
+            {Works.map((e,i)=><EachWorkComponent name={e.name} image={e.image} scope={e.scope} key={i} index={i}/>)}
         </div>
     )
 }
-function EachWorkComponent({name,scope,image}){
+function EachWorkComponent({name,scope,image,index}){
     return<div className={"Screen2EachWorkComponent"}>
-        <h1>{name}</h1>
-        <p>{scope}</p>
+        <motion.h1 key={index} initial={{
+            y:50,
+            opacity:0
+        }} whileInView={{
+            y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }}>{name}<p key={index*2*Math.random()}>View ></p></motion.h1>
+        <motion.p key={index+Math.random()} initial={{
+            y:50,
+            opacity:0
+        }} whileInView={{
+            y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }}>{scope}</motion.p>
         <img alt={"img"} src={image}/>
     </div>
 }

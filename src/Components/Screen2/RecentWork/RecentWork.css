@@ -15,10 +15,15 @@
 .Screen2EachWorkComponent{
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 .Screen2EachWorkComponent h1{
     font-size: 5vw;
     font-weight: normal;
+}.Screen2EachWorkComponent h1 p{
+    font-size: 0;
+    opacity: 0;
+    transition: 0.5s;
 }
 .Screen2EachWorkComponent p{
     font-weight: bold;
@@ -38,6 +43,14 @@
     translate: 0;
     height: 350px;
     width: 350px;
+}
+.Screen2EachWorkComponent:hover h1{
+    color: grey;
+    transition: 0.5s;
+}.Screen2EachWorkComponent:hover h1 p{
+     font-size: 20px;
+     opacity: 1;
+     transition: 0.5s;
 }
 @media screen and (max-width: 1128px) {
     .Screen2EachWorkComponent h1{
