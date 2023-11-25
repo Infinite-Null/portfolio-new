@@ -5,7 +5,7 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {AnimatePresence} from "framer-motion";
 import { motion } from 'framer-motion';
-import {menuSlide, scale, slide} from "../Header/anime";
+import {menuSlide} from "../Header/anime";
 import {HamburgerLinks} from "./HamburgerLinks";
 import {BottomSocial} from "./BottomSocial";
 

@@ -41,19 +41,50 @@ export const RecentWork = () => {
     )
 }
 function EachWorkComponent({name,scope,image,index}){
-    return<div className={"Screen2EachWorkComponent"}>
+    return <>
+    <div className={"Screen2EachWorkComponent"}>
         <motion.h1 key={index} initial={{
             y:50,
             opacity:0
         }} whileInView={{
             y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
-        }}>{name}<p key={index*2*Math.random()}>View ></p></motion.h1>
+        }}>{name}<p key={index*2*Math.random()}>{"View >"}</p></motion.h1>
         <motion.p key={index+Math.random()} initial={{
             y:50,
             opacity:0
         }} whileInView={{
             y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
         }}>{scope}</motion.p>
-        <img alt={"img"} src={image}/>
+        <motion.img key={index+Math.random()} initial={{
+            y:50,
+            opacity:0
+        }} whileInView={{
+            y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }} alt={"img"} src={image}/>
+       
     </div>
+    <div className="Screen2MobileViewDis">
+    <motion.img key={index+Math.random()} initial={{
+            y:50,
+            opacity:0
+        }} whileInView={{
+            y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }} alt={"img"} src={image}/>
+   <div>
+   <motion.h1 key={index} initial={{
+        y:50,
+        opacity:0
+        }} whileInView={{
+        y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }}>{name}<p key={index*2*Math.random()}>{"View >"}</p></motion.h1>
+    <motion.p key={index+Math.random()} initial={{
+        y:50,
+        opacity:0
+        }} whileInView={{
+        y:0,opacity:1,transition: {duration: 0.5, delay: 0.01}
+        }}>{scope}</motion.p>
+   </div>
+    </div>
+    </>
 }
+
