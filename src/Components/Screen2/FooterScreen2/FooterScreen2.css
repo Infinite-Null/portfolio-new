@@ -1,0 +1,117 @@
+.LetsWorkScreen2,.TogatherScreen2{
+    font-size: 600%;
+}
+.TogatherScreen2{
+    border-bottom: 2px solid gray;
+    padding-bottom: 60px;
+    position: relative;
+}
+.MyImageFooter{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.Screen2FooterContainer{
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+.CircularButtonGetInTouch{
+    border: 0px solid transparent;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+}
+.CircularTiltGetInTouch{
+    border: 0px solid transparent;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+    transition: 0.5s;
+}
+.CircularButtonGetInTouch:hover{
+    background-color: #5a72ea;
+    color: white;
+    transition: 0.5s;
+}
+.Screen2FooterInfo{
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    padding-left: 10%;
+}
+.Screen2FooterInfo span{
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.Screen2FooterInfo span:hover{
+    background-color: #5a72ea;
+    color: white;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+@media screen and (max-width:1074px) {
+    .CircularTiltGetInTouch,.CircularButtonGetInTouch{
+        height: 140px;
+        width: 140px;
+        font-size: 15px;
+        bottom: -70px;
+        right: 10px;
+    }
+    .LetsWorkScreen2,.TogatherScreen2{
+        font-size: 400%;
+    }
+    .Screen2FooterContainer{
+        padding-top: 7%;
+    }
+    .Screen2FooterInfo{
+        padding: 30px;
+        padding-left: 10%;
+    }
+    .Screen2FooterInfo span{
+        padding: 20px;
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:656px) {
+    .LetsWorkScreen2,.TogatherScreen2{
+        font-size: 300%;
+    }
+    .MyImageFooter{
+        height: 40px;
+        width: 40px;
+    }
+    .Screen2FooterContainer{
+        padding-top: 30%;
+    }
+    .CircularTiltGetInTouch,.CircularButtonGetInTouch{
+        height: 120px;
+        width: 120px;
+        font-size: 15px;
+        bottom: -60px;
+        right: 30px;
+    }
+    .Screen2FooterInfo{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Screen2FooterInfo span{
+        padding: 10px;
+        margin: 5px;
+        font-size: 4vw;
+        padding: 15px;
+    }
+}

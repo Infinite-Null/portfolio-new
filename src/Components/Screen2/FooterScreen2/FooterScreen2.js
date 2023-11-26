@@ -1,5 +1,7 @@
 import React from 'react'
-
+import "./FooterScreen2.css"
+import Me from "../../../assets/mepro.jpeg"
+import Tilt from 'react-parallax-tilt'
 export default function FooterScreen2() {
   return (
     <div style={{
@@ -9,25 +11,22 @@ export default function FooterScreen2() {
       <div style={{
         height:"100px"
       }}></div>
-      <div style={{
-        color:"white",
-        paddingLeft:"10%",
-        paddingRight:"10%",
-        paddingTop:"5%",
-      }}>
-        <div style={{
-          fontSize:"600%"
-        }}><img src='https://t4.ftcdn.net/jpg/01/56/19/15/360_F_156191504_F8KusEJnAdRbyztflKKtQnnU43GIyWv4.jpg' alt='me' style={{
-          height:"60px",
-          width:"60px",
-          borderRadius:"100%",
-          objectFit:"cover"
-        }}/><span style={{
+      <div className='Screen2FooterContainer'>
+        <div className='LetsWorkScreen2'><img className='MyImageFooter' src={Me} alt='me'/><span style={{
           marginLeft:"10px"
         }}>Let's Work</span></div>
-        <div style={{
-          fontSize:"600%"
-        }}>Together</div>
+        <div className='TogatherScreen2'>Together
+        <Tilt tiltEnable={true} tiltReverse={true} transitionSpeed={2000} scale={1} perspective={160} className='CircularTiltGetInTouch'>
+        <button className='CircularButtonGetInTouch'>  
+            Get In Touch
+        </button></Tilt>
+        </div>
+      </div>
+
+
+      <div className='Screen2FooterInfo'>
+          <span >ankit.kum.sha9933@gmail.com</span>
+          <span >+91 7478856289</span>
       </div>
     </div>
   )
