@@ -1,3 +1,5 @@
+import { Social } from "../../Links/SocialMedia"
+
 export const BottomSocial = () => {
     const anchorStyle={
         color:"white",
@@ -19,9 +21,9 @@ export const BottomSocial = () => {
                 marginTop:"20px",
                 marginBottom:"10px",
             }}>
-                <a style={anchorStyle}  target={"_blank"} href={"https://github.com/Infinite-Null"}>Github</a>
-                <a style={anchorStyle}  target={"_blank"}>Instagram</a>
-                <a style={anchorStyle } target={"_blank"} href={"https://in.linkedin.com/in/ankit-kum-shah"}>LinkedIn</a>
+                <a style={anchorStyle}  target={"_blank"} href={Social.Github} rel="noreferrer">Github</a>
+                <a style={anchorStyle}  target={"_blank"} rel="noreferrer" href={Social.Instagram}>Instagram</a>
+                <a style={anchorStyle } target={"_blank"} rel="noreferrer" href={Social.Linkedin}>LinkedIn</a>
             </div>
         </div>
     )
