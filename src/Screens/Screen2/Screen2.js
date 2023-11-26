@@ -8,7 +8,7 @@ export const Screen2 = () => {
         <div style={{
             height:"fit-content",
             backgroundColor:"white",
-            position:"relative"
+            position:"relative",
         }}>
             <Discription/>
             <RecentWork/>

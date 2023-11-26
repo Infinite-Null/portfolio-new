@@ -20,7 +20,7 @@ export const Screen1 = () => {
                     top:30,
                     left:20,
                     textDecoration:"none"
-                }}><div className={"Screen1TopGithubName"}>
+                }} rel="noreferrer"><div className={"Screen1TopGithubName"}>
                     @ Infinite Null
                 </div>
                     <div className={"Screen1TopName"}>
@@ -36,7 +36,9 @@ export const Screen1 = () => {
                 }}>
                     <Left/>
                     <Right/>
-                    <div className={"Screen1BottomMarquee"}>
+                    <div className={"Screen1BottomMarquee"} style={{
+                        zIndex:"-1"
+                    }}>
                         <Marquee autoFill={true} speed={120}>
                             {"Ankit Kumar Shah -".split(" ").map((e,i)=><motion.div initial={{
                                 y:200,

@@ -12,4 +12,13 @@ body{
     background-position: center;
     background-color: rgba(224, 167, 120, 0.85);
 }
+html,
+body,
+#root {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    /* Prevents overflow on the x-axis */
+    overflow-x: hidden;
+}
 
